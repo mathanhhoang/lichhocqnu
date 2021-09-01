@@ -32,7 +32,7 @@ fetch("data.json")
 
 
         $('#search-input').on('change paste keyup', function () {
-            var value = nonAccentVietnamese($(this).val()) 
+            let value = nonAccentVietnamese($(this).val())
             var e = document.getElementById("dropdown");
             var selected = nonAccentVietnamese(e.value)
             var data = searchTable(selected, value, myArray)
@@ -75,11 +75,11 @@ fetch("data.json")
                 if (name.indexOf(selected) > -1) {
                     var check = data[i].data
                     for (var j = 0; j < check.length; j++) {
-                        var result = nonAccentVietnamese(check[j].tenhp) 
+                        let result = nonAccentVietnamese(check[j].tenhp.toLowerCase())
                         value = value.toLowerCase()
-                        if (result.indexOf(value) >= 0) {
-                            console.log(result)
-                            console.log(value)
+                        console.log(result)
+                        console.log(value)
+                        if (result.search(value) > -1) {
                             filteredData.push(data[i].data[j])
                         }
                     }
