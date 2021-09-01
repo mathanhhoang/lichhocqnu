@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tra cứu lịch thi</title>
+</head>
+
+<body>
+    <h1>Tra cứu lịch học năm học 2021-2022 HK1</h1>
+    <p style="text-align: center">
+        <img src="logobanner.png">
+    </p>
+    <p>Website được xây dựng bởi sinh viên trường nhằm giúp mọi người thuận tiện trong việc tra cứu lịch học</p>
+    <p>Nếu trong quá trình sử dụng có xảy ra lỗi hoặc sai thông tin vui lòng phản hồi cho mình <a
+            href="https://www.facebook.com/mathanhhoang/">TẠI ĐÂY</a></p>
+
+    <div class="row">
+        <div class="card card-body">
+            <div class="form-row mx-auto" style="width:900px">
+                <select id="dropdown" class="form-control col-md-3" style="margin-right: 10px;"></select>
+                <input id="search-input" class="form-control col-md-8" type="text" placeholder="Nhập tên học phần">
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <tr class="bg-primary">
+            <th>Mã lớp HP</th>
+            <th>Tên học phần</th>
+            <th>Tên GVGD</th>
+            <th>Link học</th>
+        </tr>
+        <tbody id="myTable">
+
+        </tbody>
+    </table>
+</body>
+<script src="scripts.js"></script>
+
+</html>

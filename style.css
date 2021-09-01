@@ -1,0 +1,17 @@
+body {
+    width: 100%;
+}
+p {
+    text-align: center
+}
+h1{
+    text-align: center;
+    padding: 20px
+}
+th{ 
+    cursor: pointer;
+    color:#fff;
+}
+table {
+    margin: 10px
+}
