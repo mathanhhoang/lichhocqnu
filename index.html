@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/logoQNU.png" />
+    <link rel="icon" href="images/logoQNU.png" />
 
     <title>Học trực tuyến QNU</title>
 </head>
@@ -20,9 +20,10 @@
             <img src="images/logobanner.png">
         </a>
     </p>
-    <p>Website được xây dựng bởi sinh viên trường nhằm giúp mọi người thuận tiện trong việc tra cứu lịch học</p>
+    <p>Website được xây dựng bởi sinh viên khoa CNTT nhằm giúp mọi người thuận tiện hơn trong việc tra cứu lịch học</p>
     <p>Nếu trong quá trình sử dụng có xảy ra lỗi hoặc sai thông tin vui lòng phản hồi cho mình <a
             href="https://www.facebook.com/mathanhhoang/">TẠI ĐÂY</a></p>
+
 
     <div class="w-90 m-0 mb-2 mr-2 ml-2">
         <div class="card card-body ">
@@ -34,7 +35,56 @@
         </div>
     </div>
 
-    <table class="table table-striped w-90">
+    <div class="wrapper">
+        <a href="#demo-modal">Xem thời khoá biểu</a>
+    </div>
+    <p style="color: red">Hiện tại chức năng xem thời khoá biểu đang được xây dựng chỉ Khoa CNTT tra cứu được. Thời khoá biểu các khoa khác sẽ sớm được cập nhật!</p>
+
+    <div id="demo-modal" class="modal">
+        <div class="modal__content">
+            <h2>Tra cứu thời khoá biểu</h2>
+
+            <div class="w-90 m-0 mb-2 mr-2 ml-2" >
+                <div class="card card-body">
+                    <div class="d-flex form-row mx-auto col-md-12 col-s-10 justify-content-center">
+                        <input id="search-tkb" class="form-control col-md-5 col-s-10 mr-3" type="text"
+                            placeholder="Nhập tên học phần">
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-striped w-90" id="table">
+                <tr class="bg-primary">
+                    <th>Mã lớp HP</th>
+                    <th>Tên học phần</th>
+                    <th>Mã lớp</th>
+                    <th>Thứ</th>
+                    <th>Tiết</th>
+                </tr>
+                <tbody id="tbTKB">
+
+                </tbody>
+            </table>
+
+            <div class="modal__footer">
+                Made with <i class="fa fa-heart"></i>, by <a href="#" target="_blank">@mathahhoang</a>
+            </div>
+
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                    Lich Hoc</button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <table class="table table-striped w-90" id="table">
         <tr class="bg-primary">
             <th>Mã lớp HP</th>
             <th>Tên học phần</th>
@@ -45,6 +95,48 @@
 
         </tbody>
     </table>
+
+    <section class="block" id="yt_spotlight8">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-6" id="bottom1">
+                    <div class="module  ">
+                        <div class="modcontent clearfix">
+                            <div><img alt="logo footer" src="/images/logocntt.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6" id="bottom2">
+                    <div class="module  get-in-touch ">
+                        <h3 class="modtitle">THÔNG TIN LIÊN HỆ</h3>
+                        <div class="modcontent clearfix">
+                            <ul>
+                                <li><em class="fa fa-map-marker" aria-hidden="true"></em>
+                                    <span> Ma Thanh Hoàng</span></li>
+                                <li><em class="fa fa-phone-square" aria-hidden="true"></em>
+                                    <span>098-2288-543</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" id="bottom3">
+                    <div class="module  useful-link ">
+                        <h3 class="modtitle">LINK LIÊN KẾT</h3>
+                        <div class="modcontent clearfix">
+                            <ul class="menu ">
+                                <li class="item-1538"><a href="http://qnu.edu.vn">Trường đại học Quy Nhơn</a>
+                                </li>
+                                <li class="item-1539"><a href="http://tuyensinh.qnu.edu.vn">Trang tuyển sinh
+                                        DHQN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 <script src="scripts.js"></script>
